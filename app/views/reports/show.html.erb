@@ -1,0 +1,28 @@
+
+
+<table class="table">
+  <tr>
+    <th>体重</th>
+    <td><%= @report.weight %></td>
+  </tr>
+  <tr>
+    <th>疲労度</th>
+    <td><%= @report.tired %></td>
+  </tr>
+  <tr>
+    <th>睡眠時間</th>
+    <td><%= @report.sleep %></td>
+  </tr>
+  <tr>
+    <th>吐き気</th>
+    <td><%= @report.nausea %></td>
+  </tr>
+  <tr>
+    <th>その他</th>
+    <td><%= @report.other %></td>
+  </tr>
+  </tr>
+</table>
+
+<%= link_to 'Edit', edit_report_path(params[:id]), class: "btn btn-default" %>
+<%= link_to 'Back', root_path, class: "btn btn-default" %>

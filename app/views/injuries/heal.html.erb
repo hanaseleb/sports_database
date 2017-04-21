@@ -1,0 +1,16 @@
+<table class="table">
+  <tr>
+    <th>部位</th>
+    <th>完治</th>
+  </tr>
+  <% @user_injury.each do |x| %>
+      <tr>
+        <td><%= x.part %></td>
+        <td><%= x.heal %></td>
+      </tr>
+  <% end %>
+</table>
+
+<%= form_for @injury do |f| %>
+    <%= f.text_area(:part) %>
+<% end %>

@@ -1,0 +1,53 @@
+<ul class="nav nav-tabs">
+  <li role="navigation"><%= link_to "Report", reports_index_url(current_user.id) %></li>
+  <li role="navigation"><%= link_to "Injury", injuries_index_url(current_user.id) %></li>
+  <li role="navigation" class="active"><%= link_to "Muscle", user_muscle_path(current_user.id) %></li>
+</ul>
+<h1>ユーザー記録</h1>
+
+<table class="table table-hover table-responsive table-striped">
+  <thead class="thead-default">
+  <tr>
+    <!--<th>UserID</th>-->
+    <th>Create</th>
+    <th>Benchpress</th>
+    <th>Squat</th>
+    <th>Deadlift</th>
+    <th>Chin up</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @muscles_list.reverse_order.each do |muscle| %>
+      <tr>
+        <!--<td><%= muscle.user_id %></td>-->
+        <td><%= muscle.created_at.to_s(:date) %></td>
+        <td><%= muscle.benchpress %>kg</td>
+        <td><%= muscle.squat %>kg</td>
+        <td><%= muscle.deadlift %>kg</td>
+        <td><%= muscle.chin_up %>times</td>
+        <td><%= link_to 'Edit', edit_muscle_path(muscle) %></td>
+        <td><%= link_to 'Destroy', muscle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<!--ページネーション-->
+<%= paginate @muscles_list %>
+
+<!--リンク-->
+<%= link_to '新規登録', new_muscle_path, class: 'btn btn-default btn-lg' %>
+<%= link_to 'Back', muscles_path, class: 'btn btn-lg btn-default' %>
+
+<!--グラフ描画エリア-->
+<h2>benchpress</h2>
+<%= line_chart  @user_muscle_benchpress, max: 200, min: 50, label: "benchpress"  %>
+<h2>squat</h2>
+<%= line_chart  @user_muscle_squat, max: 300, min: 50, label: "squat" %>
+<h2>deadlift</h2>
+<%= line_chart  @user_muscle_deadlift, max: 300, min: 50, label: "deadlift"  %>
+<h2>chinup</h2>
+<%= line_chart  @user_muscle_chinup, max: 50, min: 0, label: "chinup"  %>
+
+

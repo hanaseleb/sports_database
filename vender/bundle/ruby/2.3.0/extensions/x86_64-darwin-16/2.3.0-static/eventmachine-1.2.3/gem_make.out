@@ -1,0 +1,20 @@
+current directory: /Users/AkihiroSutoh/Dropbox/600_turfc/turfc_database/vender/bundle/ruby/2.3.0/gems/eventmachine-1.2.3/ext/fastfilereader
+/Users/AkihiroSutoh/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20170415-48829-1qwz77n.rb extconf.rb
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/AkihiroSutoh/Dropbox/600_turfc/turfc_database/vender/bundle/ruby/2.3.0/extensions/x86_64-darwin-16/2.3.0-static/eventmachine-1.2.3/mkmf.log
+
+current directory: /Users/AkihiroSutoh/Dropbox/600_turfc/turfc_database/vender/bundle/ruby/2.3.0/gems/eventmachine-1.2.3/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/AkihiroSutoh/Dropbox/600_turfc/turfc_database/vender/bundle/ruby/2.3.0/gems/eventmachine-1.2.3/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/AkihiroSutoh/Dropbox/600_turfc/turfc_database/vender/bundle/ruby/2.3.0/gems/eventmachine-1.2.3/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20170415-48829-b3fw7n

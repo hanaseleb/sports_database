@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Benchpress:</strong>
+  <%= @muscle.benchpress %>
+</p>
+
+<p>
+  <strong>Squat:</strong>
+  <%= @muscle.squat %>
+</p>
+
+<p>
+  <strong>Chin up:</strong>
+  <%= @muscle.chin_up %>
+</p>
+
+<p>
+  <strong>Deadlift:</strong>
+  <%= @muscle.deadlift %>
+</p>
+
+<%= link_to 'Edit', edit_muscle_path(@muscle) %> |
+<%= link_to 'Back', root_path %>

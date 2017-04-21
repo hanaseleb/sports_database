@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-xs-12">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>TURFC Database</h1>
+          <p>Challenge, Full Throttle
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="row">
+  <div class="col-xs-12">
+    <h2>コンディショニングレポート</h2>
+    <%= link_to 'デイリー登録', new_report_path, class: 'btn btn-default' %>
+    <%= link_to '記録確認' , reports_index_path(current_user.id), :class => 'btn btn-default' %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h2>怪我報告</h2>
+    <%= link_to '怪我報告', new_injury_path, class: 'btn btn-default' %>
+    <%= link_to '記録確認' , injuries_index_path(current_user.id), :class => 'btn btn-default' %>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>ウェイト記録管理</h2>
+      <%= link_to '新規登録', new_muscle_path, class: 'btn btn-default' %>
+      <%= link_to '記録確認' , user_muscle_path(current_user.id), :class => 'btn btn-default' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>周経囲記録</h2>
+      <%= link_to '新規登録', new_muscle_path, class: 'btn btn-default disabled' %>
+      <%= link_to '記録確認' , user_muscle_path(current_user.id), :class => 'btn btn-default disabled' %>
+    </div>
+  </div>

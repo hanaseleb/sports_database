@@ -1,0 +1,38 @@
+<%= bootstrap_form_for(muscle) do |f| %>
+    <% if muscle.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(muscle.errors.count, "error") %> prohibited this muscle from being saved:</h2>
+          <ul>
+            <% muscle.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.number_field :user_id, :value => "#{current_user.id}", :readonly => true %>
+    </div>
+
+    <div class="field">
+      <%= f.number_field :benchpress %>
+    </div>
+
+    <div class="field">
+      <%= f.number_field :squat %>
+    </div>
+
+    <div class="field">
+      <%= f.number_field :chin_up %>
+    </div>
+
+    <div class="field">
+      <%= f.number_field :deadlift %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit '登録' %>
+    </div>
+    <br>
+    <%= link_to 'Back', muscles_path, class: "btn btn-default" %>
+<% end %>

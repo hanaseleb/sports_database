@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @injury.user_id %>
+</p>
+
+<p>
+  <strong>Part:</strong>
+  <%= @injury.part %>
+</p>
+
+<%= link_to 'Edit', edit_injury_path(@injury) %> |
+<%= link_to 'Back', root_path %>

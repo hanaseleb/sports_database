@@ -1,0 +1,48 @@
+      <h1>Input Condition</h1>
+
+      <%= bootstrap_form_for(@report) do |f|  %>
+          <div class="field">
+            <%= f.number_field :user_id, :value => "#{current_user.id}", :readonly => true %>
+          </div>
+
+          <div class="field">
+            <%= f.number_field :weight, label: "体重" %>
+          </div>
+
+          <div class="field">
+            <%= f.form_group :tired, label: { text: "疲労度" } do %>
+                <%= f.radio_button :tired, 0, label: "0", checked: true, inline: true %>
+                <%= f.radio_button :tired, 1, label: "1", inline: true %>
+                <%= f.radio_button :tired, 2, label: "2", inline: true %>
+                <%= f.radio_button :tired, 3, label: "3", inline: true %>
+                <%= f.radio_button :tired, 4, label: "4", inline: true %>
+                <%= f.radio_button :tired, 5, label: "5", inline: true %>
+            <% end %>
+          </div>
+
+          <div class="field">
+            <%= f.form_group :sleep, label: { text: "睡眠時間" } do %>
+                <%= f.radio_button :sleep, 0, label: "3hour", inline: true %>
+                <%= f.radio_button :sleep, 1, label: "5hour", inline: true %>
+                <%= f.radio_button :sleep, 2, label: "7hour", inline: true, checked: true %>
+                <%= f.radio_button :sleep, 3, label: "8hour", inline: true %>
+            <% end %>
+          </div>
+
+          <div class="field">
+            <%= f.form_group :nausea, label: { text: "吐き気" } do %>
+                <%= f.radio_button :nausea, 0, label: "0", checked: true, inline: true %>
+                <%= f.radio_button :nausea, 1, label: "1", inline: true %>
+                <%= f.radio_button :nausea, 2, label: "2", inline: true %>
+                <%= f.radio_button :nausea, 3, label: "3", inline: true %>
+                <%= f.radio_button :nausea, 4, label: "4", inline: true %>
+            <% end %>
+          </div>
+
+          <div class="field">
+            <%= f.text_area :other, size: "100*400" %>
+          </div>
+          <div class="actions">
+            <%= f.submit '登録' %>
+          </div>
+      <% end %>

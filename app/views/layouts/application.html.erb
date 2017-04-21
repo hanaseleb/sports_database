@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Turfc_Database</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">TURFC_Database</a>
+        <% if user_signed_in? %>
+            <%= link_to "TOP", root_path, method: :get, :class => "btn btn-default navbar-btn" %>
+            <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => "btn btn-default navbar-btn" %>
+        <% end %>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<div class="container" style="padding:60px 0 0 0">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+      <%= yield %>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
