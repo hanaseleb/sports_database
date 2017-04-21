@@ -7,7 +7,6 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
   </head>
-
   <body>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -29,7 +28,18 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1">
-      <%= yield %>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="jumbotron">
+              <div class="container">
+                <h1>TURFC Database</h1>
+                <p>Challenge, Full Throttle
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <%= yield %>
       </div>
     </div>
   </div>
