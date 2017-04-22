@@ -39,6 +39,8 @@ gem 'groupdate'
 gem 'kaminari'
 gem 'slack-api'
 
+gem 'toastr-rails'
+
 # framework for creating administration style interfaces
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'

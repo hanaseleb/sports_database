@@ -16,5 +16,6 @@
 //= require_tree .
 //= require bootstrap-sprockets
 //= require chartkick
+//= require toastr
 
 Chartkick.configure({language: "ja"});
