@@ -3,7 +3,8 @@
       　<script type="text/javascript">
     <% flash.each do |f| %>
     <% type = f[0].to_s.gsub('alert','error').gsub('notice','info') %>
-    toastr['<%=type %>']('<%=f[1] %>');
+    toastr.options.progressBar = true;
+    toastr['<%=type %>']('<%=f[1] %>',{timeOut: 2000});
     <% end %>
 </script>
   <% end %>
