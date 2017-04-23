@@ -3,6 +3,9 @@ class ReportsController < ApplicationController
 
   def index
     @report_list = Report.where(user_id: current_user.id).page(params[:page])
+    @report_list_weight = Report.where(user_id: current_user.id).group_by_day(:created_at, series: false).maximum(:weight)
+    @report_list_tired = Report.where(user_id: current_user.id).group_by_day(:created_at, series: false).maximum(:tired)
+    @report_list_sleep = Report.where(user_id: current_user.id).group_by_day(:created_at, series: false).maximum(:sleep)
   end
 
   def show

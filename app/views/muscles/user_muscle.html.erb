@@ -8,19 +8,17 @@
 <table class="table table-hover table-responsive table-striped">
   <thead class="thead-default">
   <tr>
-    <!--<th>UserID</th>-->
-    <th>Create</th>
-    <th>Benchpress</th>
-    <th>Squat</th>
-    <th>Deadlift</th>
-    <th>Chin up</th>
+    <th>登録日時</th>
+    <th>ベンチプレス</th>
+    <th>スクワット</th>
+    <th>デッドリフト</th>
+    <th>懸垂</th>
   </tr>
   </thead>
 
   <tbody>
   <% @muscles_list.reverse_order.each do |muscle| %>
       <tr>
-        <!--<td><%= muscle.user_id %></td>-->
         <td><%= muscle.created_at.to_s(:date) %></td>
         <td><%= muscle.benchpress %>kg</td>
         <td><%= muscle.squat %>kg</td>
@@ -35,19 +33,19 @@
 
 <!--ページネーション-->
 <%= paginate @muscles_list %>
-
+<br>
 <!--リンク-->
 <%= link_to '新規登録', new_muscle_path, class: 'btn btn-default btn-lg' %>
 <%= link_to 'Back', muscles_path, class: 'btn btn-lg btn-default' %>
 
 <!--グラフ描画エリア-->
-<h2>benchpress</h2>
+<h2>ベンチプレス</h2>
 <%= line_chart  @user_muscle_benchpress, max: 200, min: 50, label: "benchpress"  %>
-<h2>squat</h2>
+<h2>スクワット</h2>
 <%= line_chart  @user_muscle_squat, max: 300, min: 50, label: "squat" %>
-<h2>deadlift</h2>
+<h2>デッドリフト</h2>
 <%= line_chart  @user_muscle_deadlift, max: 300, min: 50, label: "deadlift"  %>
-<h2>chinup</h2>
+<h2>懸垂</h2>
 <%= line_chart  @user_muscle_chinup, max: 50, min: 0, label: "chinup"  %>
 
 

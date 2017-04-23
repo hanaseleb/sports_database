@@ -7,8 +7,7 @@
 <table class="table table-hover table-responsive table-striped">
   <thead class="thead-default">
   <tr>
-    <th>ID</th>
-    <th>日付</th>
+    <th>登録日時</th>
     <th>体重</th>
     <th>疲労度</th>
     <th>睡眠時間</th>
@@ -19,8 +18,7 @@
   <tbody>
   <% @report_list.reverse_order.each do |report| %>
       <tr>
-        <td><%= report.user_id %></td>
-        <td><%= report.created_at.to_s(:month) %></td>
+        <td><%= report.created_at %></td>
         <td><%= report.weight %>kg</td>
         <td><%= report.tired %></td>
         <td><%= report.sleep %></td>
@@ -34,5 +32,14 @@
 </table>
 <!--ページネーション-->
 <%= paginate @report_list %>
+<br>
+<%= link_to '新規登録', new_report_path, class: 'btn btn-default btn-lg' %>
+<%= link_to 'Back', muscles_path, class: 'btn btn-lg btn-default' %>
 
-
+<!--グラフ描画エリア-->
+<h2>体重</h2>
+<%= line_chart  @report_list_weight, max: 150, min: 40, label: "weight"  %>
+<h2>疲労度</h2>
+<%= line_chart  @report_list_tired, max: 5, min: 1, label: "tired" %>
+<h2>睡眠時間</h2>
+<%= line_chart  @report_list_sleep, max: 5, min: 1, label: "sleep"  %>
