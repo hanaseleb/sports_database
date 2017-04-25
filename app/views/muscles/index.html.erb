@@ -1,28 +1,56 @@
-<div class="row">
-  <div class="col-xs-12">
-    <h2>コンディショニングレポート</h2>
-    <%= link_to 'デイリー登録', new_report_path, class: 'btn btn-default' %>
-    <%= link_to '記録確認' , reports_index_path(current_user.id), :class => 'btn btn-default' %>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <h2>怪我報告</h2>
-    <%= link_to '怪我報告', new_injury_path, class: 'btn btn-default' %>
-    <%= link_to '記録確認' , injuries_index_path(current_user.id), :class => 'btn btn-default' %>
-  </div>
-</div>
+<%= render '/partial/navlist' %></ul>
+<h1>
+  各種入力
+</h1>
+<div class="col-xs-12">
   <div class="row">
-    <div class="col-xs-12">
-      <h2>ウェイト記録管理</h2>
-      <%= link_to '新規登録', new_muscle_path, class: 'btn btn-default' %>
-      <%= link_to '記録確認' , user_muscle_path(current_user.id), :class => 'btn btn-default' %>
+    <div class="col-sm-12 col-md-3 center-block text-center">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3><span class="glyphicon glyphicon-calendar"></span>レポート</h3>
+          <p>
+            日々の体重、体調を入力してください。
+          </p>
+          <%= link_to 'デイリー登録', new_report_path, class: 'btn btn-default' %>
+          <%= link_to '記録確認', reports_index_path(current_user.id), :class => 'btn btn-default' %>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 center-block text-center">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3><span class="glyphicon glyphicon-fire"></span>怪我報告</h3>
+          <p>怪我の部位、時期、タイミングを連絡してください。</p>
+          <%= link_to '怪我報告', new_injury_path, class: 'btn btn-default' %>
+          <%= link_to '記録確認', injuries_index_path(current_user.id), :class => 'btn btn-default' %>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 center-block text-center">
+      <div class="thumbnail">
+        <div class="caption">
+
+          <h3><span class="glyphicon glyphicon-thumbs-up"></span>ウェイト</h3>
+          <p>
+            MAX記録を測定したら入力してください。
+          </p>
+          <%= link_to '新規登録', new_muscle_path, class: 'btn btn-default' %>
+          <%= link_to '記録確認', user_muscle_path(current_user.id), :class => 'btn btn-default' %>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 center-block text-center">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>周経囲</h3>
+          <p>
+            記録を残してください。
+          </p>
+          <%= link_to '新規登録', new_muscle_path, class: 'btn btn-default disabled' %>
+          <%= link_to '記録確認', user_muscle_path(current_user.id), :class => 'btn btn-default disabled' %>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>周経囲記録</h2>
-      <%= link_to '新規登録', new_muscle_path, class: 'btn btn-default disabled' %>
-      <%= link_to '記録確認' , user_muscle_path(current_user.id), :class => 'btn btn-default disabled' %>
-    </div>
-  </div>
+</div>
+</div>

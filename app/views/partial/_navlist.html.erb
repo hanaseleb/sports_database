@@ -1,0 +1,6 @@
+<ul class="nav nav-tabs">
+  <li role="navigation"><%= link_to "TOP", root_path %></li>
+  <li role="navigation"><%= link_to "コンレポ", reports_index_url(current_user.id) %></li>
+  <li role="navigation"><%= link_to "怪我", injuries_index_url(current_user.id) %></li>
+  <li role="navigation" class="active"><%= link_to "ウェイト", user_muscle_path(current_user.id) %></li>
+</ul>
