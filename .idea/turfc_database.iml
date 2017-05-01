@@ -357,6 +357,28 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="debase (vbundled(0.2.1)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/debase-0.2.1/ext" />
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/debase-0.2.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/debase-0.2.1/ext" />
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/debase-0.2.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="debase-ruby_core_source (vbundled(0.9.9)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/debase-ruby_core_source-0.9.9/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/debase-ruby_core_source-0.9.9/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="devise (vbundled(4.2.1)) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/devise-4.2.1/app" />
@@ -741,6 +763,20 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="powder (vbundled(0.3.0)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/powder-0.3.0/bin" />
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/powder-0.3.0/lib" />
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/powder-0.3.0/man" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/powder-0.3.0/bin" />
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/powder-0.3.0/lib" />
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/powder-0.3.0/man" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="puma (vbundled(3.8.2)) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/puma-3.8.2/bin" />
@@ -873,6 +909,20 @@
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/responders-2.3.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ruby-debug-ide (vbundled(0.6.0)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/ruby-debug-ide-0.6.0/bin" />
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/ruby-debug-ide-0.6.0/ext" />
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/ruby-debug-ide-0.6.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/ruby-debug-ide-0.6.0/bin" />
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/ruby-debug-ide-0.6.0/ext" />
+          <root url="file://$MODULE_DIR$/vender/bundle/ruby/2.3.0/gems/ruby-debug-ide-0.6.0/lib" />
         </SOURCES>
       </library>
     </orderEntry>

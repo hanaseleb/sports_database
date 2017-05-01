@@ -1,0 +1,2 @@
+export RUBY_DEBUG_PORT=1234
+export POW_WORKERS=1
