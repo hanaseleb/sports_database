@@ -17,6 +17,10 @@ class MusclesController < ApplicationController
     @user_muscle_deadlift = Muscle.where(user_id: current_user.id).group_by_day(:created_at, series: false).maximum(:deadlift)
   end
 
+  def admin_user
+    @muscles = Muscle.all
+  end
+
   # GET /muscles/1
   # GET /muscles/1.json
   def show

@@ -4,6 +4,6 @@
   <li role="navigation" class="<%= 'active' if current_page?(injuries_index_url(current_user.id)) %>"><%= link_to "怪我", injuries_index_url(current_user.id) %></li>
   <li role="navigation" class="<%= 'active' if current_page?(user_muscle_path(current_user.id)) %>"><%= link_to "ウェイト", user_muscle_path(current_user.id) %></li>
   <% if current_user.admin? %>
-      <li role="navigation" class="<%= 'active' if current_page?(user_muscle_path(current_user.id)) %>"><%= link_to "管理者モード", user_muscle_path(current_user.id) %></li>
+      <li role="navigation" class="<%= 'active' if current_page?(admin_path) %>"><%= link_to "管理者モード", admin_path %></li>
   <% end %>
 </ul>
