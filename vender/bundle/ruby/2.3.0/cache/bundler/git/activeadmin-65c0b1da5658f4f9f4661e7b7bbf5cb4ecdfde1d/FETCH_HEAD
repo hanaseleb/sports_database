@@ -2,14 +2,12 @@
 6f6cd8caf8847de1bcd00b9492048cb644730338		branch '2138_improve_attributes_table' of https://github.com/activeadmin/activeadmin
 6bc5439379774e04b883a194c88d9dbe6e803bfc		branch '3894_tabs_utf8' of https://github.com/activeadmin/activeadmin
 d569c41a5eddd00172ee875462b36205510b9012		branch '4303-comments-delete' of https://github.com/activeadmin/activeadmin
+d4ab84bb681e70436530c617f494ef8d6c8d4c77		branch 'commit_lock_files' of https://github.com/activeadmin/activeadmin
 16da77252cafb3fdbea8122692036fff0da572ef		branch 'csv-pagination' of https://github.com/activeadmin/activeadmin
-e1211f34f74546ecb0120679c40cd3464f68c8d8		branch 'fix-ruby-1-9' of https://github.com/activeadmin/activeadmin
 2d16b8f88653bdcf18d1e9be64356a7ba6912c07		branch 'generator-refactor' of https://github.com/activeadmin/activeadmin
-66a07283887293b82b3a7f0a86c516eaa85db0c0		branch 'master' of https://github.com/activeadmin/activeadmin
-89ee81c2a24bcd6fa33e679f70d36222e6d626ed		branch 'rails-4-0-and-4-1' of https://github.com/activeadmin/activeadmin
-75ca56634bd7bf217f4192efa8a8bd7edbbc05d4		branch 'rails-5-1' of https://github.com/activeadmin/activeadmin
-db8b84f615cd406439c36e1b53dfacf4a34d30e0		branch 'rails5-test-ransack' of https://github.com/activeadmin/activeadmin
-bf734e5ce0c288664da1aad748a34b9b1836716e		branch 'rails5-test-sass-rails' of https://github.com/activeadmin/activeadmin
+01cd0ebf15c55d427ca5f08e2d63d6a643a9a72a		branch 'i18n_tasks' of https://github.com/activeadmin/activeadmin
+9cffa4a8113405a6fb0a73b9ec725a1d55ed039a		branch 'master' of https://github.com/activeadmin/activeadmin
+9440e9a41d2c33ec4c062736e8e118437c3efd36		branch 'mention_bot' of https://github.com/activeadmin/activeadmin
 34a7eb874e168e101d4bc16f19b386d6804cc84d		branch 'remove_metasearch_backports' of https://github.com/activeadmin/activeadmin
 175263702cd9dcf74af934e467154ed982157fee		branch 'revert-4146-lock-shoulda-matchers' of https://github.com/activeadmin/activeadmin
 92f6af42b51d34d6d8f38ac36155047c95d7f387		branch 'truncate_display_name_methods' of https://github.com/activeadmin/activeadmin
@@ -40,6 +38,7 @@ d5435ba32c5cf71baacd8db98675a7eaecf1ba99	not-for-merge	tag 'v0.6.1' of https://g
 1c90b00d82107a5f133f577e387cae035a180c1c	not-for-merge	tag 'v0.6.4' of https://github.com/activeadmin/activeadmin
 3aa8e3b1fa6c0d5c7b9101762da75068a3be71c3	not-for-merge	tag 'v0.6.5' of https://github.com/activeadmin/activeadmin
 705de16642e3a428c0855a7f8b27f566705d7299	not-for-merge	tag 'v0.6.6' of https://github.com/activeadmin/activeadmin
+4c28e17d22e1fe4f34c0641ecc4a277724dfd7c8	not-for-merge	tag 'v1.0.0' of https://github.com/activeadmin/activeadmin
 cd10bc76af898a35991c5f59f11175dbfe3b1e73	not-for-merge	tag 'v1.0.0.pre1' of https://github.com/activeadmin/activeadmin
 c2cc51b608dc27dfb2dc0efc46090a728881c9fb	not-for-merge	tag 'v1.0.0.pre2' of https://github.com/activeadmin/activeadmin
 96ae71394edc22d8c540bfa2a3c95924b8e1e0e1	not-for-merge	tag 'v1.0.0.pre3' of https://github.com/activeadmin/activeadmin
