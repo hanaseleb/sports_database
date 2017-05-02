@@ -21,3 +21,59 @@
 .byebug_history
 
 /public/assets/*
+.idea/dataSources.local.xml
+.idea/dataSources/15d0aab8-889e-4490-a044-8594992daa36/_src_/
+.idea/dataSources/15d0aab8-889e-4490-a044-8594992daa36/_staging_/
+.idea/dataSources/b686c8fa-e675-438f-b8dc-8df8648add6c/_src_/
+.idea/dataSources/b686c8fa-e675-438f-b8dc-8df8648add6c/_staging_/
+.idea/dataSources/d151f0ab-a87a-4166-8562-26c492f50682.xml
+.idea/dataSources/d151f0ab-a87a-4166-8562-26c492f50682/
+.idea/dataSources/f252366d-98f2-40e0-86fa-77fd243cf31a/_src_/
+.idea/dataSources/f252366d-98f2-40e0-86fa-77fd243cf31a/_staging_/
+".idea/workspace (\351\240\210\350\227\244\346\230\216\346\264\213 \343\201\256 MacBook Pro \343\201\256\347\253\266\345\220\210\343\202\263\343\203\224\343\203\274 2017-04-26).xml"
+".idea/workspace (\351\240\210\350\227\244\346\230\216\346\264\213 \343\201\256 MacBook Pro \343\201\256\347\253\266\345\220\210\343\202\263\343\203\224\343\203\274 2017-04-27).xml"
+.idea/workspace.xml
+app/assets/javascripts/https:/
+db/migrate/20170430115739_drop_table_admin_user.rb
+db/migrate/20170430132452_add_admin_to_users.rb
+tmp/
+vender/bundle/ruby/2.3.0/bin/powder
+vender/bundle/ruby/2.3.0/bin/rdebug-ide
+Would skip repository vender/bundle/ruby/2.3.0/bundler/gems/activeadmin-9cffa4a81134/
+Would skip repository vender/bundle/ruby/2.3.0/bundler/gems/inherited_resources-0839b077a791/
+vender/bundle/ruby/2.3.0/cache/bundler/git/activeadmin-65c0b1da5658f4f9f4661e7b7bbf5cb4ecdfde1d/branches/
+vender/bundle/ruby/2.3.0/cache/bundler/git/activeadmin-65c0b1da5658f4f9f4661e7b7bbf5cb4ecdfde1d/objects/info/
+vender/bundle/ruby/2.3.0/cache/bundler/git/activeadmin-65c0b1da5658f4f9f4661e7b7bbf5cb4ecdfde1d/objects/pack/pack-0db79a1e7de33c7698380f17c4716148076447cf.idx
+vender/bundle/ruby/2.3.0/cache/bundler/git/activeadmin-65c0b1da5658f4f9f4661e7b7bbf5cb4ecdfde1d/objects/pack/pack-0db79a1e7de33c7698380f17c4716148076447cf.pack
+vender/bundle/ruby/2.3.0/cache/bundler/git/activeadmin-65c0b1da5658f4f9f4661e7b7bbf5cb4ecdfde1d/refs/heads/commit_lock_files
+vender/bundle/ruby/2.3.0/cache/bundler/git/activeadmin-65c0b1da5658f4f9f4661e7b7bbf5cb4ecdfde1d/refs/heads/i18n_tasks
+vender/bundle/ruby/2.3.0/cache/bundler/git/activeadmin-65c0b1da5658f4f9f4661e7b7bbf5cb4ecdfde1d/refs/heads/mention_bot
+vender/bundle/ruby/2.3.0/cache/bundler/git/activeadmin-65c0b1da5658f4f9f4661e7b7bbf5cb4ecdfde1d/refs/tags/
+vender/bundle/ruby/2.3.0/cache/bundler/git/inherited_resources-14bd59625bb25b05c0ebfd81bc9049f1e5cacf0c/branches/
+vender/bundle/ruby/2.3.0/cache/bundler/git/inherited_resources-14bd59625bb25b05c0ebfd81bc9049f1e5cacf0c/objects/08/
+vender/bundle/ruby/2.3.0/cache/bundler/git/inherited_resources-14bd59625bb25b05c0ebfd81bc9049f1e5cacf0c/objects/info/
+vender/bundle/ruby/2.3.0/cache/bundler/git/inherited_resources-14bd59625bb25b05c0ebfd81bc9049f1e5cacf0c/refs/heads/master
+vender/bundle/ruby/2.3.0/cache/bundler/git/inherited_resources-14bd59625bb25b05c0ebfd81bc9049f1e5cacf0c/refs/tags/
+vender/bundle/ruby/2.3.0/cache/debase-0.2.1.gem
+vender/bundle/ruby/2.3.0/cache/debase-ruby_core_source-0.9.9.gem
+vender/bundle/ruby/2.3.0/cache/pg-0.20.0.gem
+vender/bundle/ruby/2.3.0/cache/powder-0.3.0.gem
+vender/bundle/ruby/2.3.0/cache/ruby-debug-ide-0.6.0.gem
+vender/bundle/ruby/2.3.0/cache/toastr-rails-1.0.3.gem
+vender/bundle/ruby/2.3.0/doc/
+vender/bundle/ruby/2.3.0/extensions/x86_64-darwin-16/2.3.0-static/debase-0.2.1/
+vender/bundle/ruby/2.3.0/extensions/x86_64-darwin-16/2.3.0-static/pg-0.20.0/
+vender/bundle/ruby/2.3.0/extensions/x86_64-darwin-16/2.3.0-static/ruby-debug-ide-0.6.0/
+vender/bundle/ruby/2.3.0/gems/debase-0.2.1/
+vender/bundle/ruby/2.3.0/gems/debase-ruby_core_source-0.9.9/
+vender/bundle/ruby/2.3.0/gems/nokogiri-1.7.1/ports/
+vender/bundle/ruby/2.3.0/gems/pg-0.20.0/
+vender/bundle/ruby/2.3.0/gems/powder-0.3.0/
+vender/bundle/ruby/2.3.0/gems/ruby-debug-ide-0.6.0/
+vender/bundle/ruby/2.3.0/gems/toastr-rails-1.0.3/
+vender/bundle/ruby/2.3.0/specifications/debase-0.2.1.gemspec
+vender/bundle/ruby/2.3.0/specifications/debase-ruby_core_source-0.9.9.gemspec
+vender/bundle/ruby/2.3.0/specifications/pg-0.20.0.gemspec
+vender/bundle/ruby/2.3.0/specifications/powder-0.3.0.gemspec
+vender/bundle/ruby/2.3.0/specifications/ruby-debug-ide-0.6.0.gemspec
+vender/bundle/ruby/2.3.0/specifications/toastr-rails-1.0.3.gemspec
