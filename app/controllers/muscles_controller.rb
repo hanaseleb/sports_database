@@ -21,6 +21,10 @@ class MusclesController < ApplicationController
     @muscles = Muscle.all
   end
 
+  def all_muscle
+    @muscles = Muscle.all
+  end
+
   # GET /muscles/1
   # GET /muscles/1.json
   def show

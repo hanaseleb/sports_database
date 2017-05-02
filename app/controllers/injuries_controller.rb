@@ -9,6 +9,11 @@ class InjuriesController < ApplicationController
     @injury_list = Injury.where(user_id: current_user.id).page(params[:page])
   end
 
+  def all_injury
+    @injuries = Injury.all
+  end
+
+
   def show
   end
 

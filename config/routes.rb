@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   root to: 'muscles#index'
   get '/user_muscle/:id', to: 'muscles#user_muscle', as: 'user_muscle'
   get '/admin', to: 'muscles#admin_user', as: 'admin'
+  get '/all_muscle', to: 'muscles#all_muscle', as: 'all_muscle'
+  get '/all_injury', to: 'injuries#all_injury', as: 'all_injury'
+  get '/all_report', to: 'reports#all_report', as: 'all_report'
 end

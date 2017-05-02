@@ -11,6 +11,10 @@ class ReportsController < ApplicationController
   def show
   end
 
+  def all_report
+    @reports = Report.all
+  end
+
   def new
     @report = Report.new
     @user_injury = Injury.where(user_id: current_user.id)
